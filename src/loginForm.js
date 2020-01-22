@@ -24,16 +24,19 @@ const styles = theme => ({
     width: 200
   },
   button: {
-    margin: theme.spacing.unit,
+    marginTop: 46,
+    marginBottom: 21,
     backgroundColor: '#ff9133',
     width: 324,
+    height: 57,
     color: '#ffffff'
   },
   accountButton: {
     margin: theme.spacing.unit,
     backgroundColor: '#ffffff',
     width: 324,
-    color: '#ff9133'
+    color: '#ff9133',
+    height: 57
   }
 });
 
