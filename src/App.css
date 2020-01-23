@@ -8,21 +8,28 @@
 }
 
 .leftPanel {
+  display: flex;
   background-color: #ffffff;
   max-width: 607px;
   height: 100vh;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .rightPanel {
+  display: flex !important;
   background-color: #ff9133;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hide_on_narrow {
-  display: none;
+  display: none !important;
 }
 
 @media all and (min-width: 800px) {
   .hide_on_narrow {
-    display: block;
+    display: flex !important;
   }
 }

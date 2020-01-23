@@ -54,59 +54,61 @@ class loginForm extends React.Component {
     return (
       <div className='container'>
         <div className='leftPanel'>
-          <div style={{ marginTop: 200 }}>
-            <form className={classes.container} noValidate autoComplete='off'>
-              <div
-                style={{
-                  fontSize: 25,
-                  fontWeight: 100,
-                  color: '#707070',
-                  fontFamily: 'Lato'
-                }}
-              >
-                Password Manager
+          <form className={classes.container} noValidate autoComplete='off'>
+            <div
+              style={{
+                fontSize: 25,
+                fontWeight: 100,
+                color: '#707070',
+                fontFamily: 'Lato'
+              }}
+            >
+              Password Manager
           </div>
-              <TextField
-                id='outlined-required'
-                label='Username'
-                defaultValue=''
-                className={classes.textField}
-                margin='normal'
-                variant='outlined'
-              />
+            <TextField
+              id='outlined-required'
+              label='Username'
+              defaultValue=''
+              className={classes.textField}
+              margin='normal'
+              variant='outlined'
+            />
 
-              <TextField
-                id='outlined-required'
-                label='Password'
-                defaultValue=''
-                className={classes.textField}
-                margin='normal'
-                variant='outlined'
-                type='password'
-              />
+            <TextField
+              id='outlined-required'
+              label='Password'
+              defaultValue=''
+              className={classes.textField}
+              margin='normal'
+              variant='outlined'
+              type='password'
+            />
 
-              <div>
-                <a href='http://google.com'>Forgot your password?</a>
-              </div>
+            <div>
+              <a href='http://google.com'>Forgot your password?</a>
+            </div>
 
-              <div>
-                <Button variant='contained' className={classes.button}>
-                  LOG IN
+            <div>
+              <Button variant='contained' className={classes.button}>
+                LOG IN
             </Button>
-              </div>
-              <div>
-                <Button variant='outlined' className={classes.accountButton}>
-                  CREATE AN ACCOUNT
+            </div>
+            <div>
+              <Button variant='outlined' className={classes.accountButton}>
+                CREATE AN ACCOUNT
             </Button>
-              </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
-        <div className='rightPanel hide_on_narrow'>Right Panel</div>
+        
+        <div className='rightPanel hide_on_narrow'>
+          Right Panel
+        </div>
       </div>
     );
   }
 }
+
 
 loginForm.propTypes = {
   classes: PropTypes.object.isRequired
